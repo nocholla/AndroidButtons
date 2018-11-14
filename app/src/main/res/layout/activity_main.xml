@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_white"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:context=".MainActivity">
+
+        <android.support.constraint.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+            <!-- Buttons Text -->
+            <TextView
+                android:id="@+id/tview_buttons"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_twenty"
+                android:layout_marginLeft="@dimen/margin_eight"
+                android:layout_marginRight="@dimen/margin_eight"
+                android:layout_marginStart="@dimen/margin_eight"
+                android:layout_marginEnd="@dimen/margin_eight"
+                android:textColor="@color/text_black"
+                android:text="@string/lbl_buttons"
+                android:textSize="@dimen/text_thirty"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/padding_five"
+                android:paddingRight="@dimen/padding_five"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <!-- Business Category Radio -->
+            <RadioGroup
+                android:id="@+id/radio_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_ten"
+                android:layout_marginLeft="@dimen/margin_eight"
+                android:layout_marginRight="@dimen/margin_eight"
+                android:layout_marginStart="@dimen/margin_eight"
+                android:layout_marginEnd="@dimen/margin_eight"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tview_buttons">
+
+                <RadioButton
+                    android:id="@+id/radio_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_red" />
+
+                <RadioButton
+                    android:id="@+id/radio_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_green"/>
+
+                <RadioButton
+                    android:id="@+id/radio_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_blue" />
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/radio_red"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/radio_red"-->
+                    <!--android:onClick="onRadioButtonClicked" />-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/radio_green"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/radio_green"-->
+                    <!--android:onClick="onRadioButtonClicked" />-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/radio_blue"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/radio_blue"-->
+                    <!--android:onClick="onRadioButtonClicked" />-->
+
+            </RadioGroup>
+
+            <!-- Google Button -->
+            <Button
+                android:id="@+id/btn_google"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_zero"
+                android:layout_marginTop="@dimen/margin_twenty"
+                android:layout_marginLeft="@dimen/margin_twenty"
+                android:layout_marginRight="@dimen/margin_twenty"
+                android:background="@drawable/button_shaded_radius_ten"
+                android:textSize="@dimen/text_fifteen"
+                android:textColor="@color/text_white"
+                android:textStyle="bold"
+                android:text="@string/btn_google"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radio_buttons" />
+
+            <!-- Yahoo Button -->
+            <Button
+                android:id="@+id/btn_yahoo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_zero"
+                android:layout_marginTop="@dimen/margin_twenty"
+                android:layout_marginLeft="@dimen/margin_twenty"
+                android:layout_marginRight="@dimen/margin_twenty"
+                android:background="@drawable/button_shaded_radius_ten"
+                android:textSize="@dimen/text_fifteen"
+                android:textColor="@color/text_white"
+                android:textStyle="bold"
+                android:text="@string/btn_yahoo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_google" />
+
+            <WebView
+                android:id="@+id/web_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_zero"
+                android:layout_marginTop="@dimen/margin_twenty"
+                android:layout_marginLeft="@dimen/margin_twenty"
+                android:layout_marginRight="@dimen/margin_twenty"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_yahoo" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

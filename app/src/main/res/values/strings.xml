@@ -1,0 +1,17 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">Buttons</string>
+
+    <!-- Labels -->
+    <string name="lbl_buttons">Buttons</string>
+
+    <!-- Radio -->
+    <string name="radio_red">Red</string>
+    <string name="radio_green">Green</string>
+    <string name="radio_blue">Blue</string>
+
+    <!-- Button -->
+    <string name="btn_google">Google</string>
+    <string name="btn_yahoo">Yahoo</string>
+
+</resources>
