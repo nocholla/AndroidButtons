@@ -1,4 +1,4 @@
-# EdurekaButtons
+# Android Buttons
 ![buttons 1](https://user-images.githubusercontent.com/801612/50355581-0f86a080-0504-11e9-86a6-855f5e6d7ceb.jpeg)
 ![buttons 2](https://user-images.githubusercontent.com/801612/50355585-12819100-0504-11e9-945a-44ed281ccc0b.jpeg)
 ![buttons 3](https://user-images.githubusercontent.com/801612/50355589-14e3eb00-0504-11e9-829d-58185a876601.jpeg)
